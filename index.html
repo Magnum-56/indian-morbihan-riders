@@ -4,35 +4,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Indian Morbihan Riders</title>
+<!-- Importation des polices officielles Google Fonts pour éviter tout changement sur GitHub Pages -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
 <style>
-  :root { --rouge:#8b1a1a; --creme:#f5ecd7; --noir:#1a1a1a; --or:#c9a24b; }
+  :root { 
+    --rouge:#8b1a1a; 
+    --creme:#f5ecd7; 
+    --noir:#1a1a1a; 
+    --or:#c9a24b; 
+  }
   * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:Georgia,serif; background:var(--creme); color:var(--noir); line-height:1.6; }
+  body { font-family: 'Playfair Display', Georgia, serif; background:var(--creme); color:var(--noir); line-height:1.6; }
+  
   header { background:var(--noir); color:var(--creme); position:sticky; top:0; z-index:10; border-bottom:4px solid var(--rouge); }
   nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; flex-wrap:wrap; }
   
-  /* Style pour le logo dans la barre de navigation */
-  .nav-brand { display:flex; align-items:center; gap:10px; }
-  .nav-logo { width:45px; height:45px; border-radius:50%; object-fit:cover; border:2px solid var(--or); }
+  /* Style pour le logo SVG dans le header */
+  .nav-brand { display:flex; align-items:center; gap:12px; }
+  .nav-logo-img { width:48px; height:48px; border-radius:50%; border:2px solid var(--or); object-fit:cover; flex-shrink:0; }
   
-  nav .logo { font-size:1.4rem; letter-spacing:2px; text-transform:uppercase; color:var(--or); font-weight:bold; }
+  nav .logo { font-family: 'Cinzel', serif; font-size:1.3rem; letter-spacing:2px; text-transform:uppercase; color:var(--or); font-weight:bold; }
   nav a { color:var(--creme); text-decoration:none; margin-left:1.5rem; text-transform:uppercase; font-size:.9rem; letter-spacing:1px; }
   nav a:hover, nav a.actif { color:var(--or); }
   
-  .hero { background:linear-gradient(rgba(26,26,26,.7),rgba(139,26,26,.8)),url('photo-accueil.jpg') center/cover; color:var(--creme); text-align:center; padding:6rem 2rem; }
+  .hero { background:linear-gradient(rgba(26,26,26,.75),rgba(139,26,26,.85)),url('photo-accueil.jpg') center/cover; color:var(--creme); text-align:center; padding:5rem 2rem; }
   
-  /* Style pour le grand logo dans la section Hero */
-  .hero-logo-container { margin-bottom: 1.5rem; }
-  .hero-logo { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 3px solid var(--or); box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+  /* Style pour le grand logo dans la bannière Hero */
+  .hero-logo-container { margin-bottom: 1.5rem; display: flex; justify-content: center; }
+  .hero-logo-img { width: 220px; height: 220px; border-radius: 50%; border: 4px solid var(--or); box-shadow: 0 6px 20px rgba(0,0,0,0.6); background: var(--noir); object-fit: cover; }
 
-  .hero h1 { font-size:2.5rem; text-transform:uppercase; letter-spacing:4px; }
+  .hero h1 { font-family: 'Cinzel', serif; font-size:2.5rem; text-transform:uppercase; letter-spacing:4px; margin-top: 0.5rem; }
   .hero p { font-size:1.3rem; margin:1rem 0 2rem; font-style:italic; }
-  .btn { display:inline-block; background:var(--rouge); color:var(--creme); padding:.8rem 2rem; text-decoration:none; text-transform:uppercase; letter-spacing:2px; border:2px solid var(--or); }
+  .btn { display:inline-block; background:var(--rouge); color:var(--creme); padding:.8rem 2rem; text-decoration:none; text-transform:uppercase; letter-spacing:2px; border:2px solid var(--or); transition: all 0.3s ease; font-weight: bold; }
   .btn:hover { background:var(--or); color:var(--noir); }
+  
   section { padding:4rem 2rem; max-width:1000px; margin:auto; }
-  h2 { color:var(--rouge); text-transform:uppercase; letter-spacing:3px; text-align:center; margin-bottom:2rem; border-bottom:2px solid var(--or); padding-bottom:.5rem; }
+  h2 { font-family: 'Cinzel', serif; color:var(--rouge); text-transform:uppercase; letter-spacing:3px; text-align:center; margin-bottom:2rem; border-bottom:2px solid var(--or); padding-bottom:.5rem; }
   .presentation { text-align:center; font-size:1.15rem; }
   .presentation p { margin-bottom:1rem; }
+  
   footer { background:var(--noir); color:var(--creme); text-align:center; padding:2rem; border-top:4px solid var(--rouge); }
   footer a { color:var(--or); text-decoration:none; }
   footer a:hover { text-decoration:underline; }
@@ -43,12 +56,12 @@
 <header>
   <nav>
     <div class="nav-brand">
-      <img src="LOGO-Photoroom.jpg" alt="Logo Indian Morbihan Riders" class="nav-logo">
+      <img src="https://i.ibb.co/68jC2j9/LOGO-Photoroom.jpg" alt="Logo Indian Morbihan Riders" class="nav-logo-img">
       <div class="logo">Indian Morbihan Riders</div>
     </div>
     <div>
-      <a href="index.html#presentation" class="actif">Accueil</a>
-      <a href="index.html#presentation">Qui sommes-nous</a>
+      <a href="#presentation" class="actif">Accueil</a>
+      <a href="#presentation">Qui sommes-nous</a>
       <a href="https://www.facebook.com/profile.php?id=61590270732290" target="_blank" rel="noopener noreferrer">Facebook</a>
     </div>
   </nav>
@@ -56,7 +69,7 @@
 
 <div class="hero">
   <div class="hero-logo-container">
-    <img src="LOGO-Photoroom.jpg" alt="Logo Indian Morbihan Riders" class="hero-logo">
+    <img src="https://i.ibb.co/68jC2j9/LOGO-Photoroom.jpg" alt="Logo Indian Morbihan Riders" class="hero-logo-img">
   </div>
   <h1>Indian Morbihan Riders</h1>
   <p>Des passionnés d'Indian Motorcycle, sur les routes du Morbihan.</p>
