@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indian Morbihan Riders</title>
+<style>
+  :root { --rouge:#8b1a1a; --creme:#f5ecd7; --noir:#1a1a1a; --or:#c9a24b; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Georgia,serif; background:var(--creme); color:var(--noir); line-height:1.6; }
+  header { background:var(--noir); color:var(--creme); position:sticky; top:0; z-index:10; border-bottom:4px solid var(--rouge); }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; flex-wrap:wrap; }
+  
+  /* Style pour le logo dans la barre de navigation */
+  .nav-brand { display:flex; align-items:center; gap:10px; }
+  .nav-logo { width:45px; height:45px; border-radius:50%; object-fit:cover; border:2px solid var(--or); }
+  
+  nav .logo { font-size:1.4rem; letter-spacing:2px; text-transform:uppercase; color:var(--or); font-weight:bold; }
+  nav a { color:var(--creme); text-decoration:none; margin-left:1.5rem; text-transform:uppercase; font-size:.9rem; letter-spacing:1px; }
+  nav a:hover, nav a.actif { color:var(--or); }
+  
+  .hero { background:linear-gradient(rgba(26,26,26,.7),rgba(139,26,26,.8)),url('photo-accueil.jpg') center/cover; color:var(--creme); text-align:center; padding:6rem 2rem; }
+  
+  /* Style pour le grand logo dans la section Hero */
+  .hero-logo-container { margin-bottom: 1.5rem; }
+  .hero-logo { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 3px solid var(--or); box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+
+  .hero h1 { font-size:2.5rem; text-transform:uppercase; letter-spacing:4px; }
+  .hero p { font-size:1.3rem; margin:1rem 0 2rem; font-style:italic; }
+  .btn { display:inline-block; background:var(--rouge); color:var(--creme); padding:.8rem 2rem; text-decoration:none; text-transform:uppercase; letter-spacing:2px; border:2px solid var(--or); }
+  .btn:hover { background:var(--or); color:var(--noir); }
+  section { padding:4rem 2rem; max-width:1000px; margin:auto; }
+  h2 { color:var(--rouge); text-transform:uppercase; letter-spacing:3px; text-align:center; margin-bottom:2rem; border-bottom:2px solid var(--or); padding-bottom:.5rem; }
+  .presentation { text-align:center; font-size:1.15rem; }
+  .presentation p { margin-bottom:1rem; }
+  footer { background:var(--noir); color:var(--creme); text-align:center; padding:2rem; border-top:4px solid var(--rouge); }
+  footer a { color:var(--or); text-decoration:none; }
+  footer a:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="nav-brand">
+      <img src="LOGO-Photoroom.jpg" alt="Logo Indian Morbihan Riders" class="nav-logo">
+      <div class="logo">Indian Morbihan Riders</div>
+    </div>
+    <div>
+      <a href="index.html#presentation" class="actif">Accueil</a>
+      <a href="index.html#presentation">Qui sommes-nous</a>
+      <a href="https://www.facebook.com/profile.php?id=61590270732290" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-logo-container">
+    <img src="LOGO-Photoroom.jpg" alt="Logo Indian Morbihan Riders" class="hero-logo">
+  </div>
+  <h1>Indian Morbihan Riders</h1>
+  <p>Des passionnés d'Indian Motorcycle, sur les routes du Morbihan.</p>
+  <a href="https://www.facebook.com/profile.php?id=61590270732290" class="btn" target="_blank" rel="noopener noreferrer">Rejoindre le club</a>
+</div>
+
+<section class="presentation" id="presentation">
+  <h2>Qui sommes-nous ?</h2>
+  <p>Les Indian Morbihan Riders sont une association de passionnés de motos Indian, réunis dans le Morbihan par l'amour de la route et de l'esprit rétro américain.</p>
+  <p>Notre association regroupe les propriétaires de motos Indian et Victory, rattachés à la concession Indian BPM à Theix-Noyalo (56).</p>
+  <p>Nous organisons des balades, des sorties à la journée et des rassemblements, dans une ambiance conviviale et sans prise de tête. Que tu roules en Scout, en Chief ou en Challenger, tu es le bienvenu.</p>
+  <p>Envie de nous rejoindre ? Jette un œil à nos réseaux sociaux !</p>
+</section>
+
+<footer>
+  <p>© Indian Morbihan Riders – Association loi 1901</p>
+  <p>Retrouvez-nous aussi sur <a href="https://www.facebook.com/profile.php?id=61590270732290" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+</footer>
+
+</body>
+</html>
